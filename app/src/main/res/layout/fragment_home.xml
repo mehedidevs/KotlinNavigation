@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".HomeFragment">
+
+          <Button
+              android:id="@+id/calculateBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              android:text="@string/calculate"
+              android:textAllCaps="false"
+              android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:textStyle="bold"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/weightEdt"
+              app:layout_constraintVertical_bias=".05" />
+
+          <EditText
+              android:id="@+id/weightEdt"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              android:hint="@string/weight"
+              android:inputType="numberDecimal"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/heightEdt"
+              app:layout_constraintVertical_bias=".05" />
+
+          <EditText
+              android:id="@+id/heightEdt"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              android:hint="@string/height"
+              android:inputType="numberDecimal"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+
+          <TextView
+              android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:id="@+id/tv_myBmiScore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/calculateBtn" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </ScrollView>
+    <data>
+
+    </data>
+
+
+</layout>
